@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// 连接 MongoDB 数据库
 mongoose.connect('mongodb://localhost/test');
 
 // 设计数据库  表名：cats 

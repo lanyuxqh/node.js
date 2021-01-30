@@ -47,3 +47,18 @@
       - 改
         - `findByIdAndUpdate(id,{修改},function(err,ret){})`
         - 其他 API
+
+#### 2、使用Node操作MySQL数据库
+- 引 mysql 包，调用API
+
+#### 3、Promise
+- 解决回调地狱嵌套，所以 ES6 中新增了一个API `Promise`
+- Promise 是一个构造函数(容器)
+  - 内部传异步任务，默认pending 状态
+  - resolve
+  - reject
+- then 获取容器结果，成功或失败 
+  - 传 resolve 和 reject
+  - 支持链式调用
+  - 可以在 then 方法中，返回一个 promise 对象，然后在下一个 then 方法中获取 上一个 then 返回的 promise 对象的状态结果
+- 场景.html
